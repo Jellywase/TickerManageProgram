@@ -15,7 +15,7 @@ namespace TickerManageProgram
             formState = new FormState(directory, "form" + formType);
         }
 
-        public async Task<int[]> DetectAndApplyNewForm(JsonNode filings)
+        public int[] DetectAndApplyNewForm(JsonNode filings)
         {
             var filingDatesArr = filings["filingDate"].AsArray();
             var formsArr = filings["form"].AsArray();
