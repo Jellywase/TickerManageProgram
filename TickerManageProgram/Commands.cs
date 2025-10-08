@@ -1,0 +1,133 @@
+﻿namespace TickerManageProgram
+{
+    internal static class CommandManager
+    {
+        public static Dictionary<string, Command> commands = new();
+        static CommandManager()
+        {
+            AddCommand(new AddTickerCommand());
+            AddCommand(new RemoveTickerCommand());
+            AddCommand(new ListTickersCommand());
+            AddCommand(new StartWatchingCommand());
+            AddCommand(new StopWatchingCommand());
+            AddCommand(new ExitCommand());
+            AddCommand(new LogCommand());
+        }
+        static void AddCommand(Command command)
+        {
+            commands.Add(command.commandID.ToUpperInvariant(), command);
+        }
+    }
+    internal abstract class Command
+    {
+        public abstract string commandID { get; }
+        public abstract void Execute();
+    }
+    internal class AddTickerCommand : Command
+    {
+        public override string commandID => "Add Ticker";
+
+        public override void Execute()
+        {
+            Console.WriteLine("Ticker를 입력:");
+            string ticker = Console.ReadLine()?.Trim().ToUpperInvariant() ?? string.Empty;
+            if (!ticker.Equals(string.Empty))
+            {
+                if (!Prefs.AddTicker(ticker))
+                {
+                    Console.WriteLine("중복된 티커: " + ticker);
+                }
+            }
+        }
+    }
+
+    internal class RemoveTickerCommand : Command
+    {
+        public override string commandID => "Remove Ticker";
+        public override void Execute()
+        {
+            Console.WriteLine("Ticker를 입력:");
+            string ticker = Console.ReadLine()?.Trim().ToUpperInvariant() ?? string.Empty;
+            if (!ticker.Equals(string.Empty))
+            {
+                Prefs.RemoveTicker(ticker);
+            }
+        }
+    }
+
+    internal class ListTickersCommand : Command
+    {
+        public override string commandID => "List Tickers";
+        public override void Execute()
+        {
+            Console.WriteLine("관찰중인 Ticker 목록: ");
+            foreach (string ticker in Prefs.GetTickers())
+            {
+                Console.WriteLine(ticker);
+            }
+        }
+    }
+
+    internal class ClearTickersCommand : Command
+    {
+        public override string commandID => "Clear Tickers";
+        public override void Execute()
+        {
+            Console.WriteLine("모든 티커를 제거합니다. 계속하려면 Y를 입력하세요:");
+            string input = Console.ReadLine()?.Trim().ToUpperInvariant() ?? string.Empty;
+            if (input == "Y")
+            {
+                var tickers = Prefs.GetTickers().ToList();
+                foreach (var ticker in tickers)
+                {
+                    Prefs.RemoveTicker(ticker);
+                }
+                Console.WriteLine("모든 티커가 제거되었습니다.");
+            }
+            else
+            {
+                Console.WriteLine("취소됨.");
+            }
+        }
+    }
+
+    internal class StartWatchingCommand : Command
+    {
+        public override string commandID => "Start Watching";
+        public override void Execute()
+        {
+            Console.WriteLine("관찰 시작");
+            WatchManager.StartWatchLoop();
+        }
+    }
+
+    internal class StopWatchingCommand : Command
+    {
+        public override string commandID => "Stop Watching";
+        public override void Execute()
+        {
+            Console.WriteLine("관찰 중지");
+            WatchManager.StopWatchLoop();
+        }
+    }
+
+    internal class ExitCommand : Command
+    {
+        public override string commandID => "Exit";
+        public override void Execute()
+        {
+            TickerManageProgram.mainCTS.Cancel();
+            Environment.Exit(0);
+        }
+    }
+
+    internal class LogCommand : Command
+    {
+        public override string commandID => "Log";
+        public override void Execute()
+        {
+            Console.WriteLine("Log Message: ");
+            LogChannel.EnqueueLog(new Log(Log.LogType.info, Console.ReadLine() ?? string.Empty));
+        }
+    }
+}
