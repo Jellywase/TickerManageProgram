@@ -48,3 +48,5 @@ C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerMana
 C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.pdb
 C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.genruntimeconfig.cache
 C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\ref\TickerManageProgram.dll
+C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\LLMLibrary.dll
+C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.sourcelink.json

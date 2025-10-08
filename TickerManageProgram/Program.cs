@@ -1,13 +1,12 @@
 ﻿namespace TickerManageProgram
 {
+    using LLMLibrary;
     class TickerManageProgram
     {
         public static ICIKProvider cikProvider { get; private set; }
         public static CancellationTokenSource mainCTS { get; private set; } = new CancellationTokenSource();
         static async Task Main()
         {
-            return;
-
             // CIK 테이블 초기화
             CIKLib cikLib = new();
             cikProvider = cikLib;
