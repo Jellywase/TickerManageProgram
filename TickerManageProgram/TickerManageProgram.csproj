@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LLMLibrary">
+      <HintPath>Dependency\LLMLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
