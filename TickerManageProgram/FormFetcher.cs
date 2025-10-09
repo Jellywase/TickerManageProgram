@@ -47,11 +47,9 @@ namespace TickerManageProgram
             { return null; }
             string cik = CIKProvider.defaultCIKLibrary.GetCIK(ticker);
 
-            var forms = filings["form"];
             var accessionNumbers = filings["accessionNumber"];
             var primaryDocs = filings["primaryDocument"];
 
-            var formsArr = forms.AsArray();
             var accessionArr = accessionNumbers.AsArray();
             var primaryDocArr = primaryDocs.AsArray();
 

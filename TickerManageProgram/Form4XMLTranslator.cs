@@ -9,14 +9,15 @@ namespace TickerManageProgram
         {
             StringBuilder sb = new();
 
-            // 보고일
-            var ownershipDocs = xdoc.Descendants("ownershipDocument");
-            foreach (var ownershipDoc in ownershipDocs)
-            {
-                string reportingDate = ownershipDoc?.Element("periodOfReport")?.Value ?? "N/A";
-                sb.Append($"보고일: {reportingDate}");
-                sb.AppendLine();
-            }
+            // 보고일이 사실상 거래일과 같아서 주석처리함.
+            //// 보고일
+            //var ownershipDocs = xdoc.Descendants("ownershipDocument");
+            //foreach (var ownershipDoc in ownershipDocs)
+            //{
+            //    string reportingDate = ownershipDoc?.Element("periodOfReport")?.Value ?? "N/A";
+            //    sb.Append($"보고일: {reportingDate}");
+            //    sb.AppendLine();
+            //}
 
 
             // 보고자(내부자) 정보

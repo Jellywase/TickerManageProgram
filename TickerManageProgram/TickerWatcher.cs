@@ -52,13 +52,13 @@ namespace TickerManageProgram
                     var newForm8kIndexArr = form8kWatcher.DetectAndApplyNewForm(recentFilings);
                     Task analyzeForm8Task = AnalyzeHTMLNewForm(recentFilings, newForm8kIndexArr, "8-K");
 
-                    var newForm10qIndexArr = form10qWatcher.DetectAndApplyNewForm(recentFilings);
-                    Task analyzeForm10qTask = AnalyzeHTMLNewForm(recentFilings, newForm10qIndexArr, "10-Q");
+                    //var newForm10qIndexArr = form10qWatcher.DetectAndApplyNewForm(recentFilings);
+                    //Task analyzeForm10qTask = AnalyzeHTMLNewForm(recentFilings, newForm10qIndexArr, "10-Q");
 
-                    var newForm10kIndexArr = form10kWatcher.DetectAndApplyNewForm(recentFilings);
-                    Task analyzeForm10kTask = AnalyzeHTMLNewForm(recentFilings, newForm10kIndexArr, "10-K");
+                    //var newForm10kIndexArr = form10kWatcher.DetectAndApplyNewForm(recentFilings);
+                    //Task analyzeForm10kTask = AnalyzeHTMLNewForm(recentFilings, newForm10kIndexArr, "10-K");
 
-                    Task.WaitAll(logNewForm4Task, analyzeForm8Task, analyzeForm10qTask, analyzeForm10kTask);
+                    Task.WaitAll(logNewForm4Task, analyzeForm8Task);//, analyzeForm10qTask, analyzeForm10kTask);
                 }
             }
             catch (Exception ex)
@@ -78,7 +78,8 @@ namespace TickerManageProgram
                 {
                     XDocument xmlForm4 = formFetcher.ParseToXML(await formFetcher.GetFormString(recentFilings, index));
 
-                    sb.Append(ticker + " form" + "4" + "\n\n");
+                    sb.Append(ticker + " form" + "4" + "\n");
+                    sb.Append("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>() + "\n\n");
                     sb.Append(form4XMLTranslator.Summary(xmlForm4));
 
                     LogChannel.EnqueueLog(new Log(Log.LogType.info, sb.ToString()));
@@ -100,6 +101,7 @@ namespace TickerManageProgram
                     string report = await formFetcher.ParseFromHTML(await formFetcher.GetFormString(recentFilings, index));
 
                     sb.Append(ticker + " form" + formType + "\n" );
+                    sb.Append("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>() + "\n");
                     sb.Append("LLM의 분석: \n\n");
                     sb.Append(await llmReportAnalyzer.AnalyzeReport(ticker, report));
 

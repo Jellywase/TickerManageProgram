@@ -4,7 +4,7 @@ namespace TickerManageProgram
 {
     internal class FormWatcher
     {
-        const int detectDepth = 10;
+        const int detectDepth = 5;
 
         FormState formState;
         string formType;
