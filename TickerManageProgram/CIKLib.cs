@@ -5,13 +5,15 @@ namespace TickerManageProgram
     internal class CIKLib : ICIKProvider
     {
         readonly static string userInfo = "Kwon Yongsoo (kys0521016@gmail.com)";
-        readonly HttpClient client = new HttpClient();
+        readonly HttpClient httpClient;
         Dictionary<string, string> cikTable = null;
         object lockObj = new();
 
 
         public CIKLib()
         {
+            httpClient = new();
+            httpClient.DefaultRequestHeaders.Add("User-Agent", userInfo);
         }
         public string GetCIK(string ticker)
         {
@@ -32,10 +34,8 @@ namespace TickerManageProgram
         {
             try
             {
-                client.DefaultRequestHeaders.Add("User-Agent", userInfo);
-
                 string url = "https://www.sec.gov/files/company_tickers.json";
-                string json = await client.GetStringAsync(url);
+                string json = await httpClient.GetStringAsync(url);
 
                 using JsonDocument doc = JsonDocument.Parse(json);
                 cikTable = new();

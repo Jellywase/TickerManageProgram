@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using LLMLibrary;
+using System.Text;
 using System.Text.Json.Nodes;
 using System.Xml.Linq;
 
@@ -12,6 +13,8 @@ namespace TickerManageProgram
         readonly FormWatcher form8kWatcher;
         readonly FormWatcher form10qWatcher;
         readonly FormWatcher form10kWatcher;
+
+        readonly LLMReportAnalyzer llmReportAnalyzer;
 
         JsonNode recentFilings = null;
 
@@ -29,6 +32,7 @@ namespace TickerManageProgram
             form8kWatcher = new FormWatcher(ticker, "8-K", directory);
             form10qWatcher = new FormWatcher(ticker, "10-Q", directory);
             form10kWatcher = new FormWatcher(ticker, "10-K", directory);
+            llmReportAnalyzer = new LLMReportAnalyzer();
         }
 
         public async Task Update()
@@ -40,19 +44,21 @@ namespace TickerManageProgram
                 {
                     LogChannel.EnqueueLog(new Log(Log.LogType.system, "Failed to fetch filings."));
                 }
-                // 새로운 form4 감지
                 else
                 {
                     var newForm4IndexArr = form4Watcher.DetectAndApplyNewForm(recentFilings);
-                    Task logNewForm4Task = LogNewForm4(newForm4IndexArr);
+                    Task logNewForm4Task = LogNewForm4s(recentFilings, newForm4IndexArr);
                     
                     var newForm8kIndexArr = form8kWatcher.DetectAndApplyNewForm(recentFilings);
+                    Task analyzeForm8Task = AnalyzeHTMLNewForm(recentFilings, newForm8kIndexArr, "8-K");
+
                     var newForm10qIndexArr = form10qWatcher.DetectAndApplyNewForm(recentFilings);
+                    Task analyzeForm10qTask = AnalyzeHTMLNewForm(recentFilings, newForm10qIndexArr, "10-Q");
+
                     var newForm10kIndexArr = form10kWatcher.DetectAndApplyNewForm(recentFilings);
+                    Task analyzeForm10kTask = AnalyzeHTMLNewForm(recentFilings, newForm10kIndexArr, "10-K");
 
-                    // todo: analyse new forms?
-
-                    await logNewForm4Task;
+                    Task.WaitAll(logNewForm4Task, analyzeForm8Task, analyzeForm10qTask, analyzeForm10kTask);
                 }
             }
             catch (Exception ex)
@@ -61,20 +67,44 @@ namespace TickerManageProgram
             }
         }
 
-        private async Task LogNewForm4(int[] newForm4IndexArr)
+        async Task LogNewForm4s(JsonNode recentFilings, int[] newForm4IndexArr)
         {
-            // 새로운 form4 감지시 로그
+            // 새로운 form4 로그
             if (newForm4IndexArr.Length > 0)
             {
                 Form4XMLTranslator form4XMLTranslator = new();
                 StringBuilder sb = new();
                 foreach (var index in newForm4IndexArr)
                 {
-                    XDocument xmlForm4 = await formFetcher.GetXMLForm(recentFilings, index);
+                    XDocument xmlForm4 = formFetcher.ParseToXML(await formFetcher.GetFormString(recentFilings, index));
 
-                    sb.Append("\n");
-                    sb.Append(ticker + "\n");
+                    sb.Append(ticker + " form" + "4" + "\n\n");
                     sb.Append(form4XMLTranslator.Summary(xmlForm4));
+
+                    LogChannel.EnqueueLog(new Log(Log.LogType.info, sb.ToString()));
+                    sb.Clear();
+                    // SEC 서버 부하 방지 위해 0.2초 지연
+                    await Task.Delay(200);
+                }
+            }
+        }
+
+        async Task AnalyzeHTMLNewForm(JsonNode recentFilings, int[] newFormsIndexArr, string formType)
+        {
+            // 새로운 form 분석 후 로그
+            if (newFormsIndexArr.Length > 0)
+            {
+                StringBuilder sb = new();
+                foreach (var index in newFormsIndexArr)
+                {
+                    string report = await formFetcher.ParseFromHTML(await formFetcher.GetFormString(recentFilings, index));
+
+                    sb.Append(ticker + " form" + formType + "\n" );
+                    sb.Append("LLM의 분석: \n\n");
+                    sb.Append(await llmReportAnalyzer.AnalyzeReport(ticker, report));
+
+                    // 추후 llm 성능 개선시 플러스 지연 시도도 가능.
+                    await llmReportAnalyzer.FlushContext(ticker);
 
                     LogChannel.EnqueueLog(new Log(Log.LogType.info, sb.ToString()));
                     sb.Clear();

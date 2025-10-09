@@ -8,7 +8,6 @@ namespace TickerManageProgram
         public string Summary(XDocument xdoc)
         {
             StringBuilder sb = new();
-            sb.Clear();
 
             // 보고일
             var ownershipDocs = xdoc.Descendants("ownershipDocument");
