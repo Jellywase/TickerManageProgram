@@ -22,7 +22,7 @@ namespace TickerManageProgram
 
         public async Task<JsonNode> FetchFilings()
         {
-            string cik = TickerManageProgram.cikProvider.GetCIK(ticker);
+            string cik = CIKProvider.defaultCIKLibrary.GetCIK(ticker);
             string submissionsUrl = $"https://data.sec.gov/submissions/CIK{cik}.json";
 
             try
@@ -45,7 +45,7 @@ namespace TickerManageProgram
         {
             if (filings == null)
             { return null; }
-            string cik = TickerManageProgram.cikProvider.GetCIK(ticker);
+            string cik = CIKProvider.defaultCIKLibrary.GetCIK(ticker);
 
             var forms = filings["form"];
             var accessionNumbers = filings["accessionNumber"];

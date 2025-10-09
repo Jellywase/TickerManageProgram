@@ -2,7 +2,7 @@
 
 namespace TickerManageProgram
 {
-    internal class CIKLib : ICIKProvider
+    internal class CIKLib : ICIKLibrary
     {
         readonly static string userInfo = "Kwon Yongsoo (kys0521016@gmail.com)";
         readonly HttpClient httpClient;

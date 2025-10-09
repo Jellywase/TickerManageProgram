@@ -9,18 +9,11 @@ namespace TickerManageProgram
 {
     public static class LLMProvider
     {
-        static object lockObj = new();
-        public static ILLMClient defaultLLMClient
+        public static ILLMClient defaultLLMClient { get; private set; }
+        public static async Task Initialize()
         {
-            get
-            {
-                lock (lockObj)
-                {
-                    llmClient_I ??= new LMStudioClient(ModelInfo.ModelName.gpt_oss_20b, null);
-                }
-                return llmClient_I;
-            }
+            defaultLLMClient ??= new LMStudioClient(ModelInfo.ModelName.gpt_oss_20b, null);
+            await defaultLLMClient.Connect();
         }
-        static ILLMClient llmClient_I;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace TickerManageProgram
 {
-    internal interface ICIKProvider
+    public interface ICIKLibrary
     {
         public string GetCIK(string ticker);
     }
