@@ -13,7 +13,7 @@
             AddCommand(new StopWatchingCommand());
             AddCommand(new ExitCommand());
             AddCommand(new MuteTickerLogCommand());
-            AddCommand(new ListCommandCommand());
+            AddCommand(new ListCommandsCommand());
             AddCommand(new LogCommand());
         }
         static void AddCommand(Command command)
@@ -146,9 +146,9 @@
         }
     }
 
-    internal class ListCommandCommand : Command
+    internal class ListCommandsCommand : Command
     {
-        public override string commandID => "List Command";
+        public override string commandID => "List Commands";
         public override void Execute()
         {
             Console.WriteLine("사용 가능한 명령어:");
