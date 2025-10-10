@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|c:\\users\\zim__\\onedrive\\onedrive jellywase\\coding\\tickermanageprogram\\tickermanageprogram\\watchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\watchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|c:\\users\\zim__\\onedrive\\onedrive jellywase\\coding\\tickermanageprogram\\tickermanageprogram\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|c:\\users\\zim__\\onedrive\\onedrive jellywase\\coding\\tickermanageprogram\\tickermanageprogram\\formwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\formwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|c:\\users\\zim__\\onedrive\\onedrive jellywase\\coding\\tickermanageprogram\\tickermanageprogram\\watchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\watchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\bin\\Release\\net8.0\\tickers\\RZLV\\form4.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
@@ -91,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LLMProvider.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\LLMProvider.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\LLMProvider.cs",
@@ -104,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TickerWatcher.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\TickerWatcher.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\TickerWatcher.cs",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\Program.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\Program.cs",
@@ -132,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LLMReportAnalyzer.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\LLMReportAnalyzer.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\LLMReportAnalyzer.cs",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Commands.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\Commands.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\Commands.cs",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Prefs.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\Prefs.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\Prefs.cs",
@@ -184,15 +184,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "WatchManager.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\WatchManager.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\WatchManager.cs",
               "ToolTip": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\WatchManager.cs",
               "RelativeToolTip": "TickerManageProgram\\WatchManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowE8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T16:10:29.985Z"
+              "WhenOpened": "2025-10-09T16:10:29.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -244,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "KakaoTalkLogPlatform.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\KakaoTalkLogPlatform.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\KakaoTalkLogPlatform.cs",
@@ -280,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormWatcher.cs",
               "DocumentMoniker": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\FormWatcher.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\FormWatcher.cs",
