@@ -8,9 +8,12 @@
             AddCommand(new AddTickerCommand());
             AddCommand(new RemoveTickerCommand());
             AddCommand(new ListTickersCommand());
+            AddCommand(new ClearTickersCommand());
             AddCommand(new StartWatchingCommand());
             AddCommand(new StopWatchingCommand());
             AddCommand(new ExitCommand());
+            AddCommand(new MuteTickerLogCommand());
+            AddCommand(new ListCommandCommand());
             AddCommand(new LogCommand());
         }
         static void AddCommand(Command command)
@@ -118,6 +121,41 @@
         {
             TickerManageProgram.mainCTS.Cancel();
             Environment.Exit(0);
+        }
+    }
+    
+    internal class MuteTickerLogCommand : Command
+    {
+        public override string commandID => "Mute Ticker Log";
+        public override void Execute()
+        {
+            Console.WriteLine("음소거: o, 음소거 해제: x");
+            string input = Console.ReadLine()?.Trim().ToLowerInvariant() ?? string.Empty;
+            if (input == "o")
+            {
+                Prefs.muteTickerLogging = true;
+            }
+            else if (input == "x")
+            {
+                Prefs.muteTickerLogging = false;
+            }
+            else
+            {
+                Console.WriteLine("잘못된 입력. 취소됨.");
+            }
+        }
+    }
+
+    internal class ListCommandCommand : Command
+    {
+        public override string commandID => "List Command";
+        public override void Execute()
+        {
+            Console.WriteLine("사용 가능한 명령어:");
+            foreach (var cmd in CommandManager.commands.Values)
+            {
+                Console.WriteLine("- " + cmd.commandID);
+            }
         }
     }
 

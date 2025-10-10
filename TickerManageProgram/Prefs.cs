@@ -9,6 +9,24 @@ namespace TickerManageProgram
         static object lockObj = new();
         public static event Action<string> OnTickerAdded;
         public static event Action<string> OnTickerRemoved;
+        public static bool muteTickerLogging
+        {
+            get
+            {
+                lock (lockObj)
+                {
+                    return prefsData.muteTickerLogging;
+                }
+            }
+            set
+            {
+                lock (lockObj)
+                {
+                    prefsData.muteTickerLogging = value;
+                    Save();
+                }
+            }
+        }
         static Prefs()
         {
             Load();
@@ -68,6 +86,8 @@ namespace TickerManageProgram
 
         public class PrefsData
         {
+            [JsonInclude]
+            public bool muteTickerLogging;
             [JsonInclude]
             public List<string> tickers;
             public PrefsData()
