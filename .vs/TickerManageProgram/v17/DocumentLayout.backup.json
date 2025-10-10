@@ -79,8 +79,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T14:43:01.602Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -93,8 +92,7 @@
               "ViewState": "AgIAAAEAAAAAAAAAAADwvw4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T05:41:07.264Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -107,8 +105,7 @@
               "ViewState": "AgIAAFIAAAAAAAAAAAAcwGwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T16:53:01.155Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T09:29:35.863Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -132,7 +128,7 @@
               "RelativeDocumentMoniker": "TickerManageProgram\\LLMReportAnalyzer.cs",
               "ToolTip": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\LLMReportAnalyzer.cs",
               "RelativeToolTip": "TickerManageProgram\\LLMReportAnalyzer.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAA7wDMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAD4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T04:54:46.02Z",
               "IsPinned": true,
@@ -160,8 +156,7 @@
               "RelativeToolTip": "TickerManageProgram\\WatchManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T16:10:29.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T16:10:29.985Z"
             },
             {
               "$type": "Document",
@@ -173,8 +168,7 @@
               "RelativeToolTip": "TickerManageProgram\\bin\\Release\\net8.0\\tickers\\RZLV\\form4.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-09T16:05:39.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T16:05:39.534Z"
             },
             {
               "$type": "Document",
@@ -186,8 +180,7 @@
               "RelativeToolTip": "TickerManageProgram\\ICIKLibrary.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAADwvwIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T14:42:13.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T14:42:13.139Z"
             },
             {
               "$type": "Document",
@@ -199,8 +192,7 @@
               "RelativeToolTip": "TickerManageProgram\\LogChannel.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAqwD8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T14:24:25.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T14:24:25.531Z"
             },
             {
               "$type": "Document",
@@ -212,8 +204,7 @@
               "RelativeToolTip": "TickerManageProgram\\Form4XMLTranslator.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA8wAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T14:15:44.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T14:15:44.59Z"
             },
             {
               "$type": "Document",
@@ -225,8 +216,7 @@
               "RelativeToolTip": "TickerManageProgram\\KakaoTalkLogPlatform.cs",
               "ViewState": "AgIAAHIAAAAAAAAAAAAAAIIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T11:33:06.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T11:33:06.851Z"
             },
             {
               "$type": "Document",
@@ -238,8 +228,7 @@
               "RelativeToolTip": "TickerManageProgram\\CIKLib.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T11:31:33.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T11:31:33.688Z"
             },
             {
               "$type": "Document",
@@ -251,8 +240,7 @@
               "RelativeToolTip": "TickerManageProgram\\FormFetcher.cs",
               "ViewState": "AgIAABsAAAAAAAAAAABFwCsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T04:40:13.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T04:40:13.051Z"
             },
             {
               "$type": "Document",
@@ -264,8 +252,7 @@
               "RelativeToolTip": "TickerManageProgram\\FormWatcher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T16:50:18.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T16:50:18.632Z"
             }
           ]
         },
