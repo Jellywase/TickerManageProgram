@@ -57,6 +57,10 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.3.0, )"
+            },
+            "SharpToken": {
+              "target": "Package",
+              "version": "[2.0.4, )"
             }
           },
           "imports": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3ILmvZ7lVro=",
+  "dgSpecHash": "Qj0XLKgqXCk=",
   "success": true,
   "projectFilePath": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\zim__\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\zim__\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\zim__\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
+    "C:\\Users\\zim__\\.nuget\\packages\\sharptoken\\2.0.4\\sharptoken.2.0.4.nupkg.sha512",
     "C:\\Users\\zim__\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\zim__\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
   ],

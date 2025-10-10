@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LLMLibrary;
+using SharpToken;
 
 namespace TickerManageProgram
 {
@@ -18,11 +19,11 @@ namespace TickerManageProgram
         {
             if (llmClient == null || !(await llmClient.isConnected))
             { return string.Empty; }
+
             string response = string.Empty;
             try
             {
-                string prompt = $"다음 보고서를 분석, 요약하고 호재인지 악재인지 평가해주세요:\n\n{report}";
-                response = await llmClient.SendUserMessage(chatID, prompt);
+                response = await AnalyzeReportRecursive(chatID, report, 0);
             }
             catch (Exception ex)
             {
@@ -30,10 +31,77 @@ namespace TickerManageProgram
             }
             return response;
         }
+
+        async Task<string> AnalyzeReportRecursive(string chatID, string report, int recursiveDepth)
+        {
+            const int recursiveLimit = 5;
+            if (recursiveDepth > recursiveLimit)
+            {
+                Console.WriteLine($"{chatID} 재귀 한도 초과. 보고서가 너무 깁니다.");
+                return string.Empty;
+            }
+
+            string response = string.Empty;
+            List<string> reportChunks = ChunkByTokens(report);
+            if (reportChunks.Count <= 1)
+            {
+                string prompt = $"다음 보고서를 분석, 요약하고 호재인지 악재인지 평가해주세요:\n\n{report}";
+                response = await llmClient.SendUserMessage(chatID, prompt);
+            }
+            else
+            {
+                StringBuilder sb = new();
+                for (int i = 0; i < reportChunks.Count; i++)
+                {
+                    string chunk = reportChunks[i];
+                    string prompt = $"다음은 보고서의 일부입니다. 이 부분을 요약해 주세요:\n\n{chunk}";
+                    string chunkChatID = $"{chatID}-{recursiveDepth}-{i}";
+                    string chunkSummary = await llmClient.SendUserMessage(chunkChatID, prompt);
+                    await llmClient.DisposeChat(chunkChatID);
+                    sb.AppendLine(chunkSummary);
+                }
+                string combinedSummary = sb.ToString();
+                string recursiveChatID = $"{chatID}-{++recursiveDepth}";
+                response = await AnalyzeReportRecursive(recursiveChatID, combinedSummary, recursiveDepth);
+                await llmClient.DisposeChat(recursiveChatID);
+            }
+
+            return response;
+        }
+
+        
+        List<string> ChunkByTokens(string text, int maxTokens = 4096)
+        {
+            // 당장은 gpt-4 토크나이저로 고정
+            // 모델별로 토큰 차이가 크지 않으므로 큰 문제는 없을 것
+            var encoder = GptEncoding.GetEncodingForModel("gpt-4");
+            List<int> tokens = encoder.Encode(text);
+            List<string> chunks = new();
+
+            int start = 0;
+
+            while (start < tokens.Count)
+            {
+                int end = Math.Min(start + maxTokens, tokens.Count);
+
+                // 토큰 슬라이스
+                List<int> slice = tokens.GetRange(start, end - start);
+
+                // 토큰을 다시 문자열로 복원
+                string chunkText = encoder.Decode(slice);
+
+                chunks.Add(chunkText);
+                start = end;
+            }
+
+            return chunks;
+        }
+
         public async Task FlushContext(string chatID)
         {
             if (llmClient == null || !(await llmClient.isConnected))
             { return; }
+
             try
             {
                 await llmClient.DisposeChat(chatID);

@@ -167,6 +167,15 @@
           }
         }
       },
+      "SharpToken/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/SharpToken.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SharpToken.dll": {}
+        }
+      },
       "System.Buffers/4.6.0": {
         "type": "package",
         "compile": {
@@ -415,6 +424,22 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
+    "SharpToken/2.0.4": {
+      "sha512": "XDRyMwQk/I75B/lkSqq0OBFfqfb3WpAYlAojbywGCb/RgwCCc6fnm6WN+C8tQn9Y/5dHxVpOEoF/+eHpFzCQCw==",
+      "type": "package",
+      "path": "sharptoken/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net6.0/SharpToken.dll",
+        "lib/net8.0/SharpToken.dll",
+        "lib/netstandard2.0/SharpToken.dll",
+        "sharptoken.2.0.4.nupkg.sha512",
+        "sharptoken.nuspec"
+      ]
+    },
     "System.Buffers/4.6.0": {
       "sha512": "lN6tZi7Q46zFzAbRYXTIvfXcyvQQgxnY7Xm6C6xQ9784dEL1amjM6S6Iw4ZpsvesAKnRVsM4scrDQaDqSClkjA==",
       "type": "package",
@@ -474,7 +499,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AngleSharp >= 1.3.0",
-      "Microsoft.AspNetCore.Http >= 2.3.0"
+      "Microsoft.AspNetCore.Http >= 2.3.0",
+      "SharpToken >= 2.0.4"
     ]
   },
   "packageFolders": {
@@ -534,6 +560,10 @@
           "Microsoft.AspNetCore.Http": {
             "target": "Package",
             "version": "[2.3.0, )"
+          },
+          "SharpToken": {
+            "target": "Package",
+            "version": "[2.0.4, )"
           }
         },
         "imports": [

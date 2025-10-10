@@ -78,8 +78,8 @@ namespace TickerManageProgram
                 {
                     XDocument xmlForm4 = formFetcher.ParseToXML(await formFetcher.GetFormString(recentFilings, index));
 
-                    sb.Append(ticker + " form" + "4" + "\n");
-                    sb.Append("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>() + "\n\n");
+                    sb.AppendLine(ticker + " form" + "4");
+                    sb.AppendLine("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>() + "\n");
                     sb.Append(form4XMLTranslator.Summary(xmlForm4));
 
                     LogChannel.EnqueueLog(new Log(Log.LogType.info, sb.ToString()));
@@ -100,9 +100,9 @@ namespace TickerManageProgram
                 {
                     string report = await formFetcher.ParseFromHTML(await formFetcher.GetFormString(recentFilings, index));
 
-                    sb.Append(ticker + " form" + formType + "\n" );
-                    sb.Append("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>() + "\n");
-                    sb.Append("LLM의 분석: \n\n");
+                    sb.AppendLine(ticker + " form" + formType);
+                    sb.AppendLine("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>());
+                    sb.AppendLine("LLM의 분석: \n");
                     sb.Append(await llmReportAnalyzer.AnalyzeReport(ticker, report));
 
                     // 추후 llm 성능 개선시 플러스 지연 시도도 가능.
