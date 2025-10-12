@@ -22,6 +22,7 @@ namespace TickerManageProgram
 
             // 여러 로그 플랫폼 초기화
             logPlatforms.Add(new KakaoTalkLogPlatform());
+            logPlatforms.Add(new TelegramLogPlatform());
 
             foreach (var platform in logPlatforms)
             {

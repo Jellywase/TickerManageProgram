@@ -68,6 +68,7 @@ namespace TickerManageProgram
 
                 accessToken = responseJson.GetProperty("access_token").GetString() ?? string.Empty;
                 refreshToken = responseJson.GetProperty("refresh_token").GetString() ?? string.Empty;
+                initialized = true;
             }
             catch (Exception ex)
             {

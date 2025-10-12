@@ -1,5 +1,5 @@
 {
-  "muteTickerLogging": true,
+  "muteTickerLogging": false,
   "tickers": [
     "CALM",
     "HOOD",
