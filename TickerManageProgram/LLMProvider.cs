@@ -12,7 +12,7 @@ namespace TickerManageProgram
         public static ILLMClient defaultLLMClient { get; private set; }
         public static async Task Initialize()
         {
-            defaultLLMClient ??= new LMStudioClient(ModelInfo.ModelName.gpt_oss_20b, null);
+            defaultLLMClient ??= new LMStudioClient(ModelInfo.ModelName.gpt_oss_20b, null, 300);
             await defaultLLMClient.Connect();
         }
     }

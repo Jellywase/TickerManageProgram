@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\BackUp\\Projects\\TickerManageProgram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\fjfeedwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\fjfeedwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\llmprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\llmprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\tickerwatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\tickerwatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\tickerwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\tickerwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\llmreportanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\llmreportanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +19,40 @@
       "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\ciklib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\telegramlogplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\telegramlogplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\kakaotalklogplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\kakaotalklogplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\tickerwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\tickerwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\formfetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\formfetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\formwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\formwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\tickerwatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\tickerwatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\llmreportanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\llmreportanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\fjfeedwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\fjfeedwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|e:\\backup\\projects\\tickermanageprogram\\tickermanageprogram\\formwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A13FE3-549C-CB74-19EA-D66F16AADCF1}|TickerManageProgram\\TickerManageProgram.csproj|solutionrelative:tickermanageprogram\\formwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "TickerWatchManager.cs",
               "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerWatchManager.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\TickerWatchManager.cs",
               "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerWatchManager.cs",
               "RelativeToolTip": "TickerManageProgram\\TickerWatchManager.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwD0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwD0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T07:13:15.942Z",
               "IsPinned": true,
@@ -68,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "FJFeedWatcher.cs",
               "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FJFeedWatcher.cs",
               "RelativeDocumentMoniker": "TickerManageProgram\\FJFeedWatcher.cs",
@@ -82,100 +94,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FinancialJuiceFeedState.json",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
-              "RelativeDocumentMoniker": "TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
-              "RelativeToolTip": "TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-16T09:03:31.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormFetcher.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormFetcher.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\FormFetcher.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormFetcher.cs",
-              "RelativeToolTip": "TickerManageProgram\\FormFetcher.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwB4AAAA2AAAA",
+              "DocumentIndex": 0,
+              "Title": "LLMProvider.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\LLMProvider.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\LLMProvider.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\LLMProvider.cs",
+              "RelativeToolTip": "TickerManageProgram\\LLMProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:53:33.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TickerWatcher.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerWatcher.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\TickerWatcher.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerWatcher.cs",
-              "RelativeToolTip": "TickerManageProgram\\TickerWatcher.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAADwvyUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:10:18.802Z",
+              "WhenOpened": "2025-10-16T17:02:30.318Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormWatcher.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormWatcher.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\FormWatcher.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormWatcher.cs",
-              "RelativeToolTip": "TickerManageProgram\\FormWatcher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:10:13.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Program.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\Program.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Program.cs",
-              "RelativeToolTip": "TickerManageProgram\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxIAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:06:13.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Commands.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Commands.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\Commands.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Commands.cs",
-              "RelativeToolTip": "TickerManageProgram\\Commands.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAA4wBIAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:02:36.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LLMReportAnalyzer.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\LLMReportAnalyzer.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\LLMReportAnalyzer.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\LLMReportAnalyzer.cs",
-              "RelativeToolTip": "TickerManageProgram\\LLMReportAnalyzer.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAowC4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T07:26:08.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CIKLib.cs",
-              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\CIKLib.cs",
-              "RelativeDocumentMoniker": "TickerManageProgram\\CIKLib.cs",
-              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\CIKLib.cs",
-              "RelativeToolTip": "TickerManageProgram\\CIKLib.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAqwCUAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:54:59.159Z"
             },
             {
               "$type": "Bookmark",
@@ -192,6 +120,133 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TelegramLogPlatform.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TelegramLogPlatform.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\TelegramLogPlatform.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TelegramLogPlatform.cs",
+              "RelativeToolTip": "TickerManageProgram\\TelegramLogPlatform.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:18:24.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KakaoTalkLogPlatform.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\KakaoTalkLogPlatform.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\KakaoTalkLogPlatform.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\KakaoTalkLogPlatform.cs",
+              "RelativeToolTip": "TickerManageProgram\\KakaoTalkLogPlatform.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwEIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:17:24.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FinancialJuiceFeedState.json",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
+              "RelativeDocumentMoniker": "TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
+              "RelativeToolTip": "TickerManageProgram\\bin\\Debug\\net8.0\\FeedState\\FinancialJuiceFeedState.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-16T09:03:31.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormFetcher.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormFetcher.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\FormFetcher.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormFetcher.cs",
+              "RelativeToolTip": "TickerManageProgram\\FormFetcher.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:53:33.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TickerWatcher.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerWatcher.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\TickerWatcher.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerWatcher.cs",
+              "RelativeToolTip": "TickerManageProgram\\TickerWatcher.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAGEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:10:18.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormWatcher.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormWatcher.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\FormWatcher.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\FormWatcher.cs",
+              "RelativeToolTip": "TickerManageProgram\\FormWatcher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:10:13.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Program.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\Program.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Program.cs",
+              "RelativeToolTip": "TickerManageProgram\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:06:13.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Commands.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Commands.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\Commands.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\Commands.cs",
+              "RelativeToolTip": "TickerManageProgram\\Commands.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAYwDkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:02:36.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LLMReportAnalyzer.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\LLMReportAnalyzer.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\LLMReportAnalyzer.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\LLMReportAnalyzer.cs",
+              "RelativeToolTip": "TickerManageProgram\\LLMReportAnalyzer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIA7wD8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T07:26:08.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CIKLib.cs",
+              "DocumentMoniker": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\CIKLib.cs",
+              "RelativeDocumentMoniker": "TickerManageProgram\\CIKLib.cs",
+              "ToolTip": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\CIKLib.cs",
+              "RelativeToolTip": "TickerManageProgram\\CIKLib.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwCkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:54:59.159Z",
+              "EditorCaption": ""
             }
           ]
         },

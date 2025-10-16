@@ -24,6 +24,7 @@ namespace TickerManageProgram
             try
             {
                 response = await AnalyzeReportRecursive(chatID, report, 0);
+                await llmClient.DisposeChat(chatID);
             }
             catch (Exception ex)
             {
@@ -61,9 +62,7 @@ namespace TickerManageProgram
                     sb.AppendLine(chunkSummary);
                 }
                 string combinedSummary = sb.ToString();
-                string recursiveChatID = $"{chatID}-{++recursiveDepth}";
-                response = await AnalyzeReportRecursive(recursiveChatID, combinedSummary, recursiveDepth);
-                await llmClient.DisposeChat(recursiveChatID);
+                response = await AnalyzeReportRecursive(chatID, combinedSummary, recursiveDepth);
             }
 
             return response;
