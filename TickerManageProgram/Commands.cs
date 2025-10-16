@@ -9,8 +9,8 @@
             AddCommand(new RemoveTickerCommand());
             AddCommand(new ListTickersCommand());
             AddCommand(new ClearTickersCommand());
-            AddCommand(new StartWatchingCommand());
-            AddCommand(new StopWatchingCommand());
+            AddCommand(new StartWatchingTickerCommand());
+            AddCommand(new StopWatchingTickerCommand());
             AddCommand(new ExitCommand());
             AddCommand(new MuteTickerLogCommand());
             AddCommand(new ListCommandsCommand());
@@ -94,22 +94,22 @@
         }
     }
 
-    internal class StartWatchingCommand : Command
+    internal class StartWatchingTickerCommand : Command
     {
-        public override string commandID => "Start Watching";
+        public override string commandID => "Start Watching Ticker";
         public override void Execute()
         {
-            Console.WriteLine("관찰 시작");
+            Console.WriteLine("티커 관찰 시작");
             TickerWatchManager.StartWatchLoop();
         }
     }
 
-    internal class StopWatchingCommand : Command
+    internal class StopWatchingTickerCommand : Command
     {
-        public override string commandID => "Stop Watching";
+        public override string commandID => "Stop Watching Ticker";
         public override void Execute()
         {
-            Console.WriteLine("관찰 중지");
+            Console.WriteLine("티커 관찰 중지");
             TickerWatchManager.StopWatchLoop();
         }
     }
