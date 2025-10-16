@@ -22,7 +22,16 @@ namespace TickerManageProgram
             {
                 while (!token.IsCancellationRequested)
                 {
-                    var newFeeds = await feedWatcher.Update();
+                    IEnumerable<NewFeedInfo> newFeeds = null;
+                    try
+                    {
+                        newFeeds = await feedWatcher.Update();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.Write(ex.ToString());
+                    }
+                    // feedWatcher로 부터 오류 발생시 newFeeds가 null이 될 수 있음
                     await HandleNewFeeds(newFeeds);
 
                     // FinancialJuice 조회 텀: 1분
@@ -65,6 +74,10 @@ namespace TickerManageProgram
 
         static async Task HandleNewFeeds(IEnumerable<NewFeedInfo> newFeeds)
         {
+            if (newFeeds == null || newFeeds.Count() == 0)
+            {
+                return;
+            }
             int cnt = 0;
             foreach (var newFeed in newFeeds)
             {

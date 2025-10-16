@@ -58,10 +58,10 @@ namespace TickerManageProgram
                     { "code", authCode }
                 };
 
-                var content = new FormUrlEncodedContent(values);
+                using var content = new FormUrlEncodedContent(values);
 
                 using var client = new HttpClient();
-                var response = await client.PostAsync("https://kauth.kakao.com/oauth/token", content);
+                using var response = await client.PostAsync("https://kauth.kakao.com/oauth/token", content);
                 string responseBody = await response.Content.ReadAsStringAsync();
 
                 var responseJson = JsonSerializer.Deserialize<JsonElement>(responseBody);
@@ -92,13 +92,13 @@ namespace TickerManageProgram
                 };
                 string jsonBody = JsonSerializer.Serialize(messageJson);
 
-                var messageContent = new StringContent($"template_object={jsonBody}", Encoding.UTF8, "application/x-www-form-urlencoded");
+                using StringContent messageContent = new StringContent($"template_object={jsonBody}", Encoding.UTF8, "application/x-www-form-urlencoded");
 
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {accessToken}");
 
-                var sendResponse = await client.PostAsync(kakaoSendUrl, messageContent);
+                using var sendResponse = await client.PostAsync(kakaoSendUrl, messageContent);
                 string sendResult = await sendResponse.Content.ReadAsStringAsync();
 
                 if (sendResponse.IsSuccessStatusCode)
@@ -130,8 +130,8 @@ namespace TickerManageProgram
             };
 
             using var client = new HttpClient();
-            var refreshContent = new FormUrlEncodedContent(refreshValues);
-            var refreshResponse = await client.PostAsync("https://kauth.kakao.com/oauth/token", refreshContent);
+            using var refreshContent = new FormUrlEncodedContent(refreshValues);
+            using var refreshResponse = await client.PostAsync("https://kauth.kakao.com/oauth/token", refreshContent);
 
             if (!refreshResponse.IsSuccessStatusCode)
             {

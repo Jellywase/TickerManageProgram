@@ -75,8 +75,8 @@ namespace TickerManageProgram
         }
         public async Task<string> ParseFromHTML(string formString)
         {
-            var context = BrowsingContext.New(Configuration.Default);
-            var doc = await context.OpenAsync(req => req.Content(formString));
+            using var context = BrowsingContext.New(Configuration.Default);
+            using var doc = await context.OpenAsync(req => req.Content(formString));
             string html = doc.Body?.TextContent ?? "";
 
             html = System.Net.WebUtility.HtmlDecode(html);

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Net.WebRequestMethods;
 
 namespace TickerManageProgram
 {
@@ -29,13 +27,13 @@ namespace TickerManageProgram
                 {
                     string url = $"https://api.telegram.org/bot{botToken}/sendMessage";
 
-                    var parameters = new FormUrlEncodedContent(new[]
+                    using var parameters = new FormUrlEncodedContent(new[]
                     {
                     new KeyValuePair<string, string>("chat_id", chatID),
                     new KeyValuePair<string, string>("text", log.message)
                 });
 
-                    var response = await httpClient.PostAsync(url, parameters);
+                    using var response = await httpClient.PostAsync(url, parameters);
                 }
             }
             catch (Exception ex)
