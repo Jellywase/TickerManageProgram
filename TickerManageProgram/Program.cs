@@ -15,9 +15,6 @@
             // CIK Provider 초기화
             await CIKProvider.Initialize();
 
-            FJFeedWatcher.StartWatchLoop();
-            return;
-
             // 로그 루프 시작
             _ = Task.Run(() => LogChannel.LoggingLoop(mainCTS.Token));
 

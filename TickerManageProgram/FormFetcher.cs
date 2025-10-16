@@ -28,7 +28,7 @@ namespace TickerManageProgram
             try
             {
                 // STEP 1: 최근 제출 JSON 가져오기
-                var response = await httpClient.GetStreamAsync(submissionsUrl);
+                using var response = await httpClient.GetStreamAsync(submissionsUrl);
                 using JsonDocument doc = JsonDocument.Parse(response);
                 var filings = doc.RootElement.GetProperty("filings").GetProperty("recent");
                 JsonNode filingsNode = JsonNode.Parse(filings.GetRawText());
