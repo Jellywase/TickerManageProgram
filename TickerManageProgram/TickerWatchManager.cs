@@ -89,6 +89,7 @@
             {
                 Prefs.OnTickerAdded -= tickerAddedHandler;
                 Prefs.OnTickerRemoved -= tickerRemovedHandler;
+                StopWatchLoop();
             }
         }
 
