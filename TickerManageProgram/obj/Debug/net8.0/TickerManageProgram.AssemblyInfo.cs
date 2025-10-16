@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TickerManageProgram")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bbe567d541193abdf9d58583307cc70edc646d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4b564092085334a03f94cab0571ad0337b692f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TickerManageProgram")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TickerManageProgram")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

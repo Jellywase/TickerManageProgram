@@ -1,22 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "Qj0XLKgqXCk=",
+  "dgSpecHash": "CY1KKlCng91J+IeT6GSHj6ivzTbjPUu6iSPuISR/7SD/4h2wCG1iBlK14otQGZwagk2BQMOHPWOTDl5XZUjX0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zim__\\OneDrive\\OneDrive Jellywase\\Coding\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
+  "projectFilePath": "D:\\Jellywase\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zim__\\.nuget\\packages\\anglesharp\\1.3.0\\anglesharp.1.3.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.3.0\\microsoft.aspnetcore.webutilities.2.3.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.extensions.objectpool\\8.0.11\\microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\sharptoken\\2.0.4\\sharptoken.2.0.4.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
-    "C:\\Users\\zim__\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
+    "C:\\Users\\jelly\\.nuget\\packages\\anglesharp\\1.3.0\\anglesharp.1.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.3.0\\microsoft.aspnetcore.webutilities.2.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.extensions.objectpool\\8.0.11\\microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\sharptoken\\2.0.4\\sharptoken.2.0.4.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
