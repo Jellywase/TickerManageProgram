@@ -100,7 +100,7 @@
         public override void Execute()
         {
             Console.WriteLine("관찰 시작");
-            WatchManager.StartWatchLoop();
+            TickerWatchManager.StartWatchLoop();
         }
     }
 
@@ -110,7 +110,7 @@
         public override void Execute()
         {
             Console.WriteLine("관찰 중지");
-            WatchManager.StopWatchLoop();
+            TickerWatchManager.StopWatchLoop();
         }
     }
 

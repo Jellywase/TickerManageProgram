@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="FinancialJuiceObserver">
+      <HintPath>Dependency\FinancialJuiceObserver.dll</HintPath>
+    </Reference>
     <Reference Include="LLMLibrary">
       <HintPath>Dependency\LLMLibrary.dll</HintPath>
     </Reference>

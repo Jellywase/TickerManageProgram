@@ -1,6 +1,6 @@
 ﻿namespace TickerManageProgram
 {
-    internal static class WatchManager
+    internal static class TickerWatchManager
     {
         static object lockObj = new();
         static CancellationTokenSource cts = null;
@@ -78,7 +78,7 @@
                     int waitSeconds = (int)(nextWithoutSeconds - now).TotalSeconds;
 
                     Console.WriteLine($"감시루프 완료 {now.ToString()}");
-                    await Task.Delay(waitSeconds * 1000);
+                    await Task.Delay(waitSeconds * 1000, token);
                 }
             }
             catch (Exception ex)
@@ -94,24 +94,30 @@
 
         public static void StartWatchLoop()
         {
-            if (cts != null)
+            lock (lockObj)
             {
-                Console.WriteLine("Watch loop is already running.");
-                return;
+                if (cts != null)
+                {
+                    Console.WriteLine("Watch loop is already running.");
+                    return;
+                }
+                cts = new CancellationTokenSource();
+                _ = WatchLoop(cts.Token);
             }
-            cts = new CancellationTokenSource();
-            _ = WatchLoop(cts.Token);
         }
         public static void StopWatchLoop()
         {
-            if (cts == null)
+            lock (lockObj)
             {
-                Console.WriteLine("Watch loop is not running.");
-                return;
+                if (cts == null)
+                {
+                    Console.WriteLine("Watch loop is not running.");
+                    return;
+                }
+                cts.Cancel();
+                cts.Dispose();
+                cts = null;
             }
-            cts.Cancel();
-            cts.Dispose();
-            cts = null;
         }
     }
 }
