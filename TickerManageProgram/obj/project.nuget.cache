@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CY1KKlCng91J+IeT6GSHj6ivzTbjPUu6iSPuISR/7SD/4h2wCG1iBlK14otQGZwagk2BQMOHPWOTDl5XZUjX0g==",
+  "dgSpecHash": "rr9ACHhGbxvlNoVUtdlfpzFh21JJnwXBwWjmQRnMO33lpV5YlSA6YVelq7kAoe3244p0SFq9Wqlo5mZ7RFvtcw==",
   "success": true,
   "projectFilePath": "D:\\Jellywase\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\jelly\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\jelly\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\jelly\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
+    "C:\\Users\\jelly\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
     "C:\\Users\\jelly\\.nuget\\packages\\sharptoken\\2.0.4\\sharptoken.2.0.4.nupkg.sha512",
     "C:\\Users\\jelly\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\jelly\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"

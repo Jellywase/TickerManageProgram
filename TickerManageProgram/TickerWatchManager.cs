@@ -84,12 +84,12 @@
             catch (Exception ex)
             {
                 Console.WriteLine("Error in WatchLoop: " + ex.Message);
+                StopWatchLoop();
             }
             finally
             {
                 Prefs.OnTickerAdded -= tickerAddedHandler;
                 Prefs.OnTickerRemoved -= tickerRemovedHandler;
-                StopWatchLoop();
             }
         }
 

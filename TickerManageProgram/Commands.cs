@@ -15,6 +15,8 @@
             AddCommand(new MuteTickerLogCommand());
             AddCommand(new ListCommandsCommand());
             AddCommand(new LogCommand());
+            AddCommand(new StartWatchingFJCommand());
+            AddCommand(new StopWatchingFJCommand());
         }
         static void AddCommand(Command command)
         {
@@ -166,6 +168,26 @@
         {
             Console.WriteLine("Log Message: ");
             LogChannel.EnqueueLog(new Log(Log.LogType.info, Console.ReadLine() ?? string.Empty));
+        }
+    }
+
+    internal class StartWatchingFJCommand : Command
+    {
+        public override string commandID => "Start Watching FJ";
+        public override void Execute()
+        {
+            Console.WriteLine("Financial Juice 관찰 시작");
+            FJFeedWatcher.StartWatchLoop();
+        }
+    }
+
+    internal class StopWatchingFJCommand : Command
+    {
+        public override string commandID => "Stop Watching FJ";
+        public override void Execute()
+        {
+            Console.WriteLine("Financial Juice 관찰 중지");
+            FJFeedWatcher.StopWatchLoop();
         }
     }
 }

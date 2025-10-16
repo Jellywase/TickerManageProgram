@@ -52,3 +52,34 @@ C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerMana
 C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.sourcelink.json
 C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\AngleSharp.dll
 C:\Users\zim__\OneDrive\OneDrive Jellywase\Coding\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\SharpToken.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\TickerManageProgram.exe
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\TickerManageProgram.deps.json
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\TickerManageProgram.runtimeconfig.json
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\TickerManageProgram.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\TickerManageProgram.pdb
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\AngleSharp.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.AspNetCore.Http.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.AspNetCore.WebUtilities.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\SharpToken.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\FinancialJuiceObserver.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\LLMLibrary.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.csproj.AssemblyReference.cache
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.AssemblyInfoInputs.cache
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.AssemblyInfo.cs
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.csproj.CoreCompileInputs.cache
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.sourcelink.json
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerMa.56233FEB.Up2Date
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\refint\TickerManageProgram.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.pdb
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\TickerManageProgram.genruntimeconfig.cache
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\obj\Debug\net8.0\ref\TickerManageProgram.dll
+D:\Jellywase\Projects\TickerManageProgram\TickerManageProgram\bin\Debug\net8.0\Newtonsoft.Json.dll

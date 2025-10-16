@@ -32,10 +32,6 @@ namespace TickerManageProgram
             catch (Exception ex)
             {
                 Console.Write(ex.ToString());
-                cts.Cancel();
-            }
-            finally
-            {
                 StopWatchLoop();
             }
         }
