@@ -26,13 +26,12 @@ namespace TickerManageProgram
                     try
                     {
                         newFeeds = await feedWatcher.Update();
+                        await EvaluateAndLogNewFeeds(newFeeds);
                     }
                     catch (Exception ex)
                     {
                         Console.Write(ex.ToString());
                     }
-                    // feedWatcher로 부터 오류 발생시 newFeeds가 null이 될 수 있음
-                    await HandleNewFeeds(newFeeds);
 
                     // FinancialJuice 조회 텀: 1분
                     await Task.Delay(60000, token);
@@ -72,7 +71,7 @@ namespace TickerManageProgram
             }
         }
 
-        static async Task HandleNewFeeds(IEnumerable<NewFeedInfo> newFeeds)
+        static async Task EvaluateAndLogNewFeeds(IEnumerable<NewFeedInfo> newFeeds)
         {
             if (newFeeds == null || newFeeds.Count() == 0)
             {
