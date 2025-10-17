@@ -77,7 +77,7 @@
                     DateTime nextWithoutSeconds = new DateTime(next.Year, next.Month, next.Day, next.Hour, next.Minute, 0);
                     int waitSeconds = (int)(nextWithoutSeconds - now).TotalSeconds;
 
-                    Console.WriteLine($"감시루프 완료 {now.ToString()}");
+                    Console.WriteLine($"티커 감시루프 완료 {now.ToString()}");
                     await Task.Delay(waitSeconds * 1000, token);
                 }
             }

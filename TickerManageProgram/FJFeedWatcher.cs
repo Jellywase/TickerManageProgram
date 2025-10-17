@@ -33,6 +33,7 @@ namespace TickerManageProgram
                         Console.Write(ex.ToString());
                     }
 
+                    Console.WriteLine($"FJ 감시루프 완료 {DateTime.Now.ToString()}");
                     // FinancialJuice 조회 텀: 1분
                     await Task.Delay(60000, token);
                 }
