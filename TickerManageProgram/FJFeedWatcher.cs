@@ -103,7 +103,7 @@ namespace TickerManageProgram
 
         static async Task<(FeedImportance importance, string reason)> AskImportanceToLLM(string feedSummary, string chatID)
         {
-            const string systemMessage = "다음 소식을 듣고 미국의 주식과 경제에 큰 영향을 미칠경우 첫 줄에 imp, 사소하다면 ord라고만 답한 후, 이유도 간단하게 함께 알려주세요.";
+            const string systemMessage = "다음 소식을 듣고 미국의 주식과 경제에 큰 영향을 미칠경우 첫 줄에 imp, 사소하다면 ord라고만 답한 후, 이유도 한글로 간단하게 함께 알려주세요.";
             await llmClient.SetSystemMessage(chatID, systemMessage);
 
             string response = await llmClient.SendUserMessage(chatID, feedSummary);

@@ -46,6 +46,8 @@ namespace TickerManageProgram
             List<string> reportChunks = LLMUtility.ChunkByTokens(report);
             if (reportChunks.Count <= 1)
             {
+                string systemPrompt = "당신은 되도록 한글로 답해야합니다.";
+                await llmClient.SetSystemMessage(chatID, systemPrompt);
                 string prompt = $"다음 보고서를 분석, 요약하고 호재인지 악재인지 평가해주세요:\n\n{report}";
                 response = await llmClient.SendUserMessage(chatID, prompt);
             }
