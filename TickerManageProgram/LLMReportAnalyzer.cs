@@ -43,7 +43,7 @@ namespace TickerManageProgram
             }
 
             string response = string.Empty;
-            List<string> reportChunks = ChunkByTokens(report);
+            List<string> reportChunks = LLMUtility.ChunkByTokens(report);
             if (reportChunks.Count <= 1)
             {
                 string prompt = $"다음 보고서를 분석, 요약하고 호재인지 악재인지 평가해주세요:\n\n{report}";
@@ -66,34 +66,6 @@ namespace TickerManageProgram
             }
 
             return response;
-        }
-
-        
-        List<string> ChunkByTokens(string text, int maxTokens = 4096)
-        {
-            // 당장은 gpt-4 토크나이저로 고정
-            // 모델별로 토큰 차이가 크지 않으므로 큰 문제는 없을 것
-            var encoder = GptEncoding.GetEncodingForModel("gpt-4");
-            List<int> tokens = encoder.Encode(text);
-            List<string> chunks = new();
-
-            int start = 0;
-
-            while (start < tokens.Count)
-            {
-                int end = Math.Min(start + maxTokens, tokens.Count);
-
-                // 토큰 슬라이스
-                List<int> slice = tokens.GetRange(start, end - start);
-
-                // 토큰을 다시 문자열로 복원
-                string chunkText = encoder.Decode(slice);
-
-                chunks.Add(chunkText);
-                start = end;
-            }
-
-            return chunks;
         }
 
         public async Task FlushContext(string chatID)

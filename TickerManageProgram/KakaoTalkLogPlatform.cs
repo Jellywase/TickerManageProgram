@@ -81,7 +81,7 @@ namespace TickerManageProgram
         {
             if (lockProcess)
             { return; }
-            if (log.type is Log.LogType.ticker or Log.LogType.test)
+            if (log.type is Log.LogType.ticker or Log.LogType.fj or Log.LogType.test)
             {
                 var messageJson = new
                 {
