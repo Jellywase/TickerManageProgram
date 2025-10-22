@@ -11,6 +11,7 @@ namespace TickerManageProgram
         readonly FormFetcher formFetcher;
         readonly FormWatcher form4Watcher;
         readonly FormWatcher form8kWatcher;
+        readonly FormWatcher form6kWatcher;
         readonly FormWatcher form10qWatcher;
         readonly FormWatcher form10kWatcher;
 
@@ -30,6 +31,7 @@ namespace TickerManageProgram
             formFetcher = new FormFetcher(ticker);
             form4Watcher = new FormWatcher(ticker, "4", directory);
             form8kWatcher = new FormWatcher(ticker, "8-K", directory);
+            form6kWatcher = new FormWatcher(ticker, "6-K", directory);
             form10qWatcher = new FormWatcher(ticker, "10-Q", directory);
             form10kWatcher = new FormWatcher(ticker, "10-K", directory);
             llmReportAnalyzer = new LLMReportAnalyzer();
@@ -50,7 +52,10 @@ namespace TickerManageProgram
                     Task logNewForm4Task = Prefs.muteTickerLogging ? Task.CompletedTask : LogNewForm4s(recentFilings, newForm4IndexArr);
                     
                     var newForm8kIndexArr = form8kWatcher.DetectAndApplyNewForm(recentFilings);
-                    Task analyzeForm8Task = Prefs.muteTickerLogging ? Task.CompletedTask : AnalyzeHTMLNewForm(recentFilings, newForm8kIndexArr, "8-K");
+                    Task analyzeForm8kTask = Prefs.muteTickerLogging ? Task.CompletedTask : AnalyzeHTMLNewForm(recentFilings, newForm8kIndexArr, "8-K");
+
+                    var newForm6kIndexArr = form8kWatcher.DetectAndApplyNewForm(recentFilings);
+                    Task analyzeForm6kTask = Prefs.muteTickerLogging ? Task.CompletedTask : AnalyzeHTMLNewForm(recentFilings, newForm6kIndexArr, "6-K");
 
                     var newForm10qIndexArr = form10qWatcher.DetectAndApplyNewForm(recentFilings);
                     Task analyzeForm10qTask = Prefs.muteTickerLogging ? Task.CompletedTask : AnalyzeHTMLNewForm(recentFilings, newForm10qIndexArr, "10-Q");
@@ -58,7 +63,7 @@ namespace TickerManageProgram
                     var newForm10kIndexArr = form10kWatcher.DetectAndApplyNewForm(recentFilings);
                     Task analyzeForm10kTask = Prefs.muteTickerLogging ? Task.CompletedTask : AnalyzeHTMLNewForm(recentFilings, newForm10kIndexArr, "10-K");
 
-                    Task.WaitAll(logNewForm4Task, analyzeForm8Task, analyzeForm10qTask, analyzeForm10kTask);
+                    Task.WaitAll(logNewForm4Task, analyzeForm8kTask, analyzeForm6kTask, analyzeForm10qTask, analyzeForm10kTask);
                 }
             }
             catch (Exception ex)

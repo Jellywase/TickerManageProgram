@@ -548,24 +548,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jelly\\.nuget\\packages\\": {},
-    "D:\\ProgramFiles\\VisualStudio\\SDK\\NuGetPackages": {}
+    "C:\\Users\\jelly\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Jellywase\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
+      "projectUniqueName": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
       "projectName": "TickerManageProgram",
-      "projectPath": "D:\\Jellywase\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
+      "projectPath": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\TickerManageProgram.csproj",
       "packagesPath": "C:\\Users\\jelly\\.nuget\\packages\\",
-      "outputPath": "D:\\Jellywase\\Projects\\TickerManageProgram\\TickerManageProgram\\obj\\",
+      "outputPath": "E:\\BackUp\\Projects\\TickerManageProgram\\TickerManageProgram\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\ProgramFiles\\VisualStudio\\SDK\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\jelly\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
