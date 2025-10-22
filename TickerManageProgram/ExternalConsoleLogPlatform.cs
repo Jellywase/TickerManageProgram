@@ -63,7 +63,7 @@ namespace TickerManageProgram
 
         public Task SendLog(Log log)
         {
-            if (log.type is Log.LogType.info or Log.LogType.system)
+            if (log.type is Log.LogType.ticker or Log.LogType.system)
             { 
                 writer.WriteLine(log.message);
                 writer.Flush();

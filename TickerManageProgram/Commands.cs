@@ -167,7 +167,7 @@
         public override void Execute()
         {
             Console.WriteLine("Log Message: ");
-            LogChannel.EnqueueLog(new Log(Log.LogType.info, Console.ReadLine() ?? string.Empty));
+            LogChannel.EnqueueLog(new Log(Log.LogType.test, Console.ReadLine() ?? string.Empty));
         }
     }
 

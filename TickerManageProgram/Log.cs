@@ -3,7 +3,7 @@
 
     internal class Log
     {
-        public enum LogType { info, system }
+        public enum LogType { system, ticker, fj, test }
         public LogType type { get; private set; }
         public string message { get; private set; }
         DateTime time;

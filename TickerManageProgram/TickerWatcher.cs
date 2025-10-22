@@ -82,7 +82,7 @@ namespace TickerManageProgram
                     sb.AppendLine("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>() + "\n");
                     sb.Append(form4XMLTranslator.Summary(xmlForm4));
 
-                    LogChannel.EnqueueLog(new Log(Log.LogType.info, sb.ToString()));
+                    LogChannel.EnqueueLog(new Log(Log.LogType.ticker, sb.ToString()));
                     sb.Clear();
                     // SEC 서버 부하 방지 위해 0.2초 지연
                     await Task.Delay(200);
@@ -108,7 +108,7 @@ namespace TickerManageProgram
                     // 추후 llm 성능 개선시 플러스 지연 시도도 가능.
                     await llmReportAnalyzer.FlushContext(ticker);
 
-                    LogChannel.EnqueueLog(new Log(Log.LogType.info, sb.ToString()));
+                    LogChannel.EnqueueLog(new Log(Log.LogType.ticker, sb.ToString()));
                     sb.Clear();
                     // SEC 서버 부하 방지 위해 0.2초 지연
                     await Task.Delay(200);

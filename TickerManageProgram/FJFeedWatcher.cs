@@ -84,38 +84,44 @@ namespace TickerManageProgram
                 string feedSummary = BuildFeedSummary(newFeed);
 
                 // LLM에게 중요도 분석의뢰
-                var importance = await AskImportanceToLLM(feedSummary, newFeed.pubDate.ToString() + cnt);
+                var evaluation = await AskImportanceToLLM(feedSummary, newFeed.pubDate.ToString() + cnt);
                 
                 // 중요도 높을 시 로그
-                if (importance is FeedImportance.important)
+                if (evaluation.importance is FeedImportance.important)
                 {
-                    LogChannel.EnqueueLog(new Log(Log.LogType.info, feedSummary));
+                    StringBuilder sb = new StringBuilder();
+                    sb.AppendLine(feedSummary);
+                    sb.AppendLine();
+                    sb.AppendLine("평가:");
+                    sb.AppendLine(evaluation.reason);
+                    LogChannel.EnqueueLog(new Log(Log.LogType.fj, sb.ToString()));
                 }
 
                 cnt++;
             }
         }
 
-        static async Task<FeedImportance> AskImportanceToLLM(string feedSummary, string chatID)
+        static async Task<(FeedImportance importance, string reason)> AskImportanceToLLM(string feedSummary, string chatID)
         {
-            const string systemMessage = "다음 소식을 듣고 미국의 주식과 경제에 큰 영향을 미칠경우 important라고만 답하고, 사소하다면 ordinary라고만 답해주세요.";
+            const string systemMessage = "다음 소식을 듣고 미국의 주식과 경제에 큰 영향을 미칠경우 첫 줄에 imp, 사소하다면 ord라고만 답한 후, 이유도 간단하게 함께 알려주세요.";
             await llmClient.SetSystemMessage(chatID, systemMessage);
 
-            string importance = await llmClient.SendUserMessage(chatID, feedSummary);
+            string response = await llmClient.SendUserMessage(chatID, feedSummary);
             await llmClient.DisposeChat(chatID);
+            string importance = new string(response.Take(3).ToArray());
+            string reason = response.Substring(3);
+            if (reason.StartsWith('\n') || reason.StartsWith(' '))
+            { reason = reason.Substring(1); }
             switch (importance)
             {
-                case "important":
-                    return FeedImportance.important;
-                    break;
+                case "imp":
+                    return (FeedImportance.important, reason);
 
-                case "ordinary":
-                    return FeedImportance.ordinary;
-                    break;
+                case "ord":
+                    return (FeedImportance.ordinary, reason);
 
                 default:
-                    return FeedImportance.ordinary;
-                    break;
+                    return (FeedImportance.ordinary, reason);
             }
         }
         static string BuildFeedSummary(NewFeedInfo feedInfo)
