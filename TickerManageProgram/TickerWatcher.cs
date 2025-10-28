@@ -106,17 +106,11 @@ namespace TickerManageProgram
                     // 첫번째는 메인 파일, 두번째부터는 첨부파일
                     IEnumerable<string> formStrings = await formFetcher.GetFormStringIncludeAttachment(recentFilings, index);
 
-                    // string 파싱된 메인과 첨부 문서들
-                    List<string> parsedForms = new();
+                    // string 파싱된 메인과 첨부 문서들 이어붙이기
                     foreach (var formString in formStrings)
                     {
-                        parsedForms.Add(await formFetcher.ParseFromHTML(formString));
-                    }
-
-                    // 메인 문서와 첨부문서들 이어붙이기
-                    foreach (var parsedForm in parsedForms)
-                    {
-                        sb.AppendLine(parsedForm);
+                        sb.AppendLine(await formFetcher.ParseFromHTML(formString));
+                        sb.AppendLine();
                     }
 
                     string report = sb.ToString();
