@@ -103,8 +103,25 @@ namespace TickerManageProgram
                 StringBuilder sb = new();
                 foreach (var index in newFormsIndexArr)
                 {
-                    string report = await formFetcher.ParseFromHTML(await formFetcher.GetFormString(recentFilings, index));
+                    // 첫번째는 메인 파일, 두번째부터는 첨부파일
+                    IEnumerable<string> formStrings = await formFetcher.GetFormStringIncludeAttachment(recentFilings, index);
 
+                    // string 파싱된 메인과 첨부 문서들
+                    List<string> parsedForms = new();
+                    foreach (var formString in formStrings)
+                    {
+                        parsedForms.Add(await formFetcher.ParseFromHTML(formString));
+                    }
+
+                    // 메인 문서와 첨부문서들 이어붙이기
+                    foreach (var parsedForm in parsedForms)
+                    {
+                        sb.AppendLine(parsedForm);
+                    }
+
+                    string report = sb.ToString();
+
+                    sb.Clear();
                     sb.AppendLine(ticker + " form" + formType);
                     sb.AppendLine("게시일: " + recentFilings["filingDate"].AsArray()[index].GetValue<string>());
                     sb.AppendLine("LLM의 분석: \n");
