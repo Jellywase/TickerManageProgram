@@ -2,6 +2,7 @@
 using System.Net;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace TickerManageProgram
 {
@@ -64,10 +65,10 @@ namespace TickerManageProgram
                 using var response = await client.PostAsync("https://kauth.kakao.com/oauth/token", content);
                 string responseBody = await response.Content.ReadAsStringAsync();
 
-                var responseJson = JsonSerializer.Deserialize<JsonElement>(responseBody);
+                var responseJson = JsonSerializer.Deserialize<JsonNode>(responseBody);
 
-                accessToken = responseJson.GetProperty("access_token").GetString() ?? string.Empty;
-                refreshToken = responseJson.GetProperty("refresh_token").GetString() ?? string.Empty;
+                accessToken = responseJson?["access_token"]?.GetValue<string>() ?? string.Empty;
+                refreshToken = responseJson?["refresh_token"]?.GetValue<string>() ?? string.Empty;
                 initialized = true;
             }
             catch (Exception ex)
@@ -141,9 +142,9 @@ namespace TickerManageProgram
             }
 
             string refreshBody = await refreshResponse.Content.ReadAsStringAsync();
-            var refreshData = JsonSerializer.Deserialize<JsonElement>(refreshBody);
+            var refreshData = JsonSerializer.Deserialize<JsonNode>(refreshBody);
 
-            accessToken = refreshData.GetProperty("access_token").GetString() ?? string.Empty;
+            accessToken = refreshData?["access_token"]?.GetValue<string>() ?? string.Empty;
         }
     }
 }
