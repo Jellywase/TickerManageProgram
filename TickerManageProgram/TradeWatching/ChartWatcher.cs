@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TickerManageProgram
+namespace TickerManageProgram.TradeWatching
 {
-    internal class TradeWatcher
+    internal class ChartWatcher
     {
-        ITradeDataSource dataSource;
+        TradeDataMiner miner;
+
+
     }
 }
